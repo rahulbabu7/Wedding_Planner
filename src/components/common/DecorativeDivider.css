@@ -1,0 +1,23 @@
+.decorative-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  margin-block: var(--space-md);
+}
+
+.decorative-divider__line {
+  height: 1px;
+  width: clamp(32px, 8vw, 80px);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--color-accent-gold),
+    transparent
+  );
+  opacity: 0.6;
+}
+
+.decorative-divider__lotus {
+  flex-shrink: 0;
+}

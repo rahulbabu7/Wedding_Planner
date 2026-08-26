@@ -1,0 +1,45 @@
+.scroll-indicator {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-xs);
+  color: var(--ivory);
+  opacity: 0.85;
+}
+
+.scroll-indicator__label {
+  font-family: var(--font-display);
+  font-size: var(--fs-eyebrow);
+  letter-spacing: var(--tracking-wider);
+  text-transform: uppercase;
+}
+
+.scroll-indicator__dot {
+  animation: scroll-indicator-move 2.2s ease-in-out infinite;
+  transform-origin: center;
+}
+
+@keyframes scroll-indicator-move {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  60% {
+    transform: translateY(12px);
+    opacity: 0.2;
+  }
+  61% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scroll-indicator__dot {
+    animation: none;
+  }
+}

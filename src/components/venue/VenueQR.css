@@ -1,0 +1,18 @@
+.venue-qr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.venue-qr__card {
+  padding: var(--space-md);
+  background: #ffffff;
+  border: 1px solid rgba(43, 33, 24, 0.08);
+  box-shadow: var(--shadow-soft);
+  border-radius: 6px;
+}
+
+.venue-qr__caption {
+  color: var(--color-text-muted);
+}

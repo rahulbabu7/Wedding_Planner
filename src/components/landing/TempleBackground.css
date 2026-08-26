@@ -1,0 +1,52 @@
+.temple-background {
+  position: absolute;
+  inset: -4% -2%;
+  z-index: 0;
+}
+
+.temple-background__sky {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    var(--indigo-night) 0%,
+    var(--indigo-royal) 38%,
+    var(--teal-deep) 78%,
+    var(--teal-soft) 100%
+  );
+}
+
+.temple-background__star {
+  position: absolute;
+  border-radius: 50%;
+  background: var(--gold-light);
+  opacity: 0.5;
+  animation: temple-star-twinkle 4s ease-in-out infinite;
+}
+
+@keyframes temple-star-twinkle {
+  0%,
+  100% {
+    opacity: 0.15;
+  }
+  50% {
+    opacity: 0.75;
+  }
+}
+
+.temple-background__gopuram {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(140%, 900px);
+  height: 62%;
+  opacity: 0.9;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .temple-background__star {
+    animation: none;
+    opacity: 0.4;
+  }
+}

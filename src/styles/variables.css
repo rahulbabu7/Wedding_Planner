@@ -1,0 +1,69 @@
+/* ==========================================================================
+   Design tokens — Rahul & Kiran temple wedding invitation
+   Palette derived from South Indian temple stone, silk, and foil-gold motifs.
+   Adjust these values once real artwork/photography is supplied.
+   ========================================================================== */
+
+:root {
+  /* -- Core palette --------------------------------------------------- */
+  --ivory: #f8efd9;
+  --ivory-deep: #efe3c2;
+  --paper: #fbf6e8;
+
+  --teal-deep: #0b6e6e;
+  --teal-soft: #1a8f8a;
+
+  --indigo-royal: #133b77;
+  --indigo-night: #0a2450;
+
+  --magenta-silk: #b4297a;
+  --magenta-soft: #d565a2;
+
+  --gold-foil: #ce9f3e;
+  --gold-light: #e8c776;
+  --gold-dim: #a87d2c;
+
+  --leaf-deep: #35603a;
+  --leaf-soft: #598c4f;
+  --leaf-dry: #9c7a3f;
+
+  --ink: #2b2118;
+  --ink-soft: #56483a;
+
+  /* -- Semantic aliases -------------------------------------------------- */
+  --color-bg: var(--ivory);
+  --color-surface: var(--paper);
+  --color-text: var(--ink);
+  --color-text-muted: var(--ink-soft);
+  --color-accent-primary: var(--teal-deep);
+  --color-accent-secondary: var(--magenta-silk);
+  --color-accent-gold: var(--gold-foil);
+  --color-accent-green: var(--leaf-deep);
+
+  /* -- Spacing scale ------------------------------------------------------ */
+  --space-3xs: 0.25rem;
+  --space-2xs: 0.5rem;
+  --space-xs: 0.75rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2.5rem;
+  --space-xl: 4rem;
+  --space-2xl: 6rem;
+  --space-3xl: 9rem;
+
+  /* -- Layout -------------------------------------------------------------*/
+  --content-max-width: 640px;
+  --wide-max-width: 1180px;
+  --touch-target: 44px;
+
+  /* -- Motion -------------------------------------------------------------*/
+  --ease-invite: cubic-bezier(0.22, 1, 0.36, 1);
+  --duration-slow: 1.4s;
+  --duration-medium: 0.9s;
+  --duration-fast: 0.45s;
+
+  /* -- Elevation (used sparingly, per design brief) ---------------------- */
+  --shadow-soft: 0 12px 32px -18px rgba(43, 33, 24, 0.45);
+
+  color-scheme: light;
+}

@@ -1,0 +1,47 @@
+.ornamental-frame {
+  position: relative;
+  padding: var(--space-xl) var(--space-md);
+}
+
+.ornamental-frame__pillar {
+  position: absolute;
+  top: 8%;
+  bottom: 8%;
+  width: 20px;
+  opacity: 0.55;
+  display: none;
+}
+
+.ornamental-frame__pillar--left {
+  left: -4px;
+}
+
+.ornamental-frame__pillar--right {
+  right: -4px;
+}
+
+.ornamental-frame__arch {
+  width: 100%;
+  height: 56px;
+  margin-bottom: var(--space-sm);
+}
+
+.ornamental-frame__arch--bottom {
+  margin-top: var(--space-sm);
+  margin-bottom: 0;
+}
+
+.ornamental-frame__content {
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .ornamental-frame {
+    padding-inline: var(--space-xl);
+  }
+
+  .ornamental-frame__pillar {
+    display: block;
+    width: 28px;
+  }
+}

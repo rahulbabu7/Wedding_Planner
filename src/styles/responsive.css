@@ -1,0 +1,48 @@
+/* ==========================================================================
+   Responsive scaffolding
+   Mobile-first. Breakpoints intentionally match the device widths called
+   out in the brief (360–430 mobile, 768/1024 tablet, 1280/1440/1920 desktop)
+   ========================================================================== */
+
+:root {
+  --edge-gutter: clamp(1.25rem, 6vw, 3rem);
+}
+
+.section__inner {
+  padding-inline: var(--edge-gutter);
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  :root {
+    --content-max-width: 720px;
+  }
+}
+
+/* Small desktop */
+@media (min-width: 1024px) {
+  :root {
+    --content-max-width: 780px;
+  }
+}
+
+/* Desktop — let artwork breathe, keep content column controlled */
+@media (min-width: 1280px) {
+  :root {
+    --content-max-width: 860px;
+  }
+}
+
+@media (min-width: 1920px) {
+  :root {
+    --content-max-width: 920px;
+  }
+}
+
+/* Touch targets */
+button,
+a.button,
+.tap-target {
+  min-height: var(--touch-target);
+  min-width: var(--touch-target);
+}

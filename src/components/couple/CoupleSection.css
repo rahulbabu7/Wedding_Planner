@@ -1,0 +1,53 @@
+.couple-section {
+  background: var(--indigo-night);
+  color: var(--ivory);
+  isolation: isolate;
+}
+
+.couple-section__backdrop {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: linear-gradient(180deg, var(--indigo-night) 0%, var(--indigo-royal) 55%, var(--teal-deep) 100%);
+}
+
+.couple-section__gopuram {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(150%, 900px);
+  height: 55%;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.couple-section__inner {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-md);
+  padding-block: var(--space-2xl);
+}
+
+.couple-section__eyebrow {
+  color: var(--gold-light);
+}
+
+.couple-section__names {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  color: var(--ivory);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3em;
+}
+
+.couple-section__amp {
+  font-family: var(--font-body);
+  font-style: italic;
+  font-size: 0.5em;
+  color: var(--gold-light);
+  text-transform: none;
+}

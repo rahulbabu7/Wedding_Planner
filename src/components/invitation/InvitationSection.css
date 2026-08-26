@@ -1,0 +1,147 @@
+.invitation-section {
+  background: radial-gradient(120% 100% at 50% 0%, var(--ivory-deep) 0%, var(--ivory) 55%, var(--ivory) 100%);
+  padding-block: var(--space-2xl);
+}
+
+.invitation-section__inner {
+  max-width: 720px;
+}
+
+.invitation-section__frame {
+  background: var(--paper);
+  box-shadow: var(--shadow-soft);
+  border-radius: 4px;
+}
+
+.invitation-section__lead-in {
+  margin-block: var(--space-sm);
+}
+
+.invitation-section__events-heading {
+  margin-top: var(--space-lg);
+  margin-bottom: var(--space-md);
+  color: var(--color-accent-primary);
+}
+
+.invitation-section__events {
+  display: grid;
+  gap: var(--space-md);
+  text-align: center;
+}
+
+/* -- InvitationText -------------------------------------------------- */
+.invitation-text {
+  display: grid;
+  gap: var(--space-sm);
+  margin-block: var(--space-sm) var(--space-md);
+}
+
+.invitation-text__blessing {
+  color: var(--color-accent-secondary);
+}
+
+.invitation-text__intro {
+  max-width: 46ch;
+  margin-inline: auto;
+}
+
+/* -- ParentDetails ------------------------------------------------------ */
+.parent-details {
+  display: grid;
+  gap: var(--space-xs);
+  margin-block: var(--space-sm);
+}
+
+.parent-details__family {
+  display: grid;
+  gap: 0.2rem;
+}
+
+.parent-details__names {
+  font-size: var(--fs-body);
+}
+
+.parent-details__grand {
+  font-size: var(--fs-small);
+  color: var(--color-text-muted);
+}
+
+.parent-details__joiner {
+  color: var(--color-accent-gold);
+}
+
+/* -- CoupleNames ---------------------------------------------------------*/
+.couple-names {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-xs);
+  margin-block: var(--space-sm);
+}
+
+.couple-names__row {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3em;
+  color: var(--color-accent-primary);
+}
+
+.couple-names__amp {
+  font-family: var(--font-body);
+  font-style: italic;
+  font-size: 0.5em;
+  color: var(--color-accent-gold);
+  text-transform: none;
+}
+
+.couple-names__underline {
+  display: block;
+  width: clamp(80px, 20vw, 160px);
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--color-accent-gold), transparent);
+  transform: scaleX(0);
+}
+
+/* -- EventDetails ---------------------------------------------------------*/
+.event-details {
+  display: grid;
+  justify-items: center;
+  gap: 0.35rem;
+  padding-block: var(--space-sm);
+  border-top: 1px solid rgba(206, 159, 62, 0.3);
+}
+
+.event-details:first-child {
+  border-top: none;
+}
+
+.event-details__title {
+  font-size: 1.4rem;
+  color: var(--color-accent-secondary);
+}
+
+.event-details__meta {
+  font-size: var(--fs-small);
+  color: var(--color-text-muted);
+}
+
+.event-details__venue {
+  font-size: var(--fs-small);
+  color: var(--color-accent-primary);
+}
+
+.event-details__description {
+  max-width: 40ch;
+  font-size: var(--fs-small);
+  color: var(--color-text-muted);
+}
+
+@media (min-width: 768px) {
+  .invitation-section__events {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .event-details:nth-child(2) {
+    border-top: none;
+  }
+}

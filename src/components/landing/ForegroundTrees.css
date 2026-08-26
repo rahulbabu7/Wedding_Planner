@@ -1,0 +1,17 @@
+.foreground-trees {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.foreground-trees__cluster {
+  position: absolute;
+  inset: 0;
+}
+
+.foreground-trees__leaf {
+  position: absolute;
+  filter: drop-shadow(0 6px 10px rgba(10, 20, 15, 0.25));
+}

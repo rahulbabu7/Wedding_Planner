@@ -1,0 +1,45 @@
+.temple-foreground {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.temple-foreground__pillar {
+  position: absolute;
+  top: 6%;
+  bottom: 10%;
+  width: 34px;
+  opacity: 0.5;
+  display: none;
+}
+
+.temple-foreground__pillar--left {
+  left: 3%;
+}
+
+.temple-foreground__pillar--right {
+  right: 3%;
+}
+
+.temple-foreground__lotus {
+  position: absolute;
+  opacity: 0.5;
+}
+
+.temple-foreground__lotus--left {
+  top: 8%;
+  left: 6%;
+}
+
+.temple-foreground__lotus--right {
+  top: 8%;
+  right: 6%;
+}
+
+@media (min-width: 768px) {
+  .temple-foreground__pillar {
+    display: block;
+    width: 46px;
+  }
+}

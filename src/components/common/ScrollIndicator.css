@@ -15,7 +15,7 @@
 }
 
 .scroll-indicator__dot {
-  animation: scroll-indicator-move 2.2s ease-in-out infinite;
+  animation: scroll-indicator-move 2.2s ease-in-out infinite reverse;
   transform-origin: center;
 }
 

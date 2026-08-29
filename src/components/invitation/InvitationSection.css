@@ -77,6 +77,7 @@
   align-items: center;
   gap: var(--space-xs);
   margin-block: var(--space-sm);
+  font-size: var(--fs-couple-name)/1;
 }
 
 .couple-names__row {

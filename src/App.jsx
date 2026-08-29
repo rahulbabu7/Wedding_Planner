@@ -9,24 +9,27 @@ import { useMediaQuery } from "./hooks/useMediaQuery";
 import { MEDIA_MOBILE } from "./config/theme";
 
 function App() {
-  const reducedMotion = useReducedMotion();
-  const isMobile = useMediaQuery(MEDIA_MOBILE);
+	const reducedMotion = useReducedMotion();
+	const isMobile = useMediaQuery(MEDIA_MOBILE);
 
-  // Lenis stays off for reduced-motion users and on mobile, where native
-  // touch scrolling is more reliable than an inertia layer.
-  useEffect(() => {
-    if (reducedMotion || isMobile) return undefined;
-    return setupSmoothScroll();
-  }, [reducedMotion, isMobile]);
+	// Lenis stays off for reduced-motion users and on mobile, where native
+	// touch scrolling is more reliable than an inertia layer.
+	useEffect(() => {
+		if (reducedMotion || isMobile) return undefined;
+		return setupSmoothScroll();
+	}, [reducedMotion, isMobile]);
 
-  return (
-    <main>
-      <LandingSection />
-      <InvitationSection />
-      <CoupleSection />
-      <VenueSection />
-    </main>
-  );
+	return (
+		<main>
+			<div className="wedding-page" >
+				<LandingSection />
+				<InvitationSection />
+				<CoupleSection />
+				<VenueSection />
+
+			</div>
+		</main>
+	);
 }
 
 export default App;

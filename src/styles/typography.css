@@ -35,7 +35,7 @@ h3,
 }
 
 .couple-name {
-  font-size: var(--fs-couple-name);
+  /* font-size: var(--fs-couple-name); */
   font-weight: 600;
   letter-spacing: 0.06em;
 }

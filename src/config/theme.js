@@ -2,9 +2,9 @@
 // scattering magic numbers through animation code.
 
 export const BREAKPOINTS = {
-  mobile: 0,
-  tablet: 768,
-  desktop: 1280,
+	mobile: 0,
+	tablet: 768,
+	desktop: 1280,
 };
 
 export const MEDIA_DESKTOP = "(min-width: 1024px)";
@@ -22,8 +22,8 @@ export const TREE_X_RANGE = 10; // px
 export const TREE_Y_RANGE = 14; // px
 
 // -- Flying leaf reveal (couple section) ---------------------------------
-export const DESKTOP_LEAF_COUNT = 28;
-export const MOBILE_LEAF_COUNT = 13;
+export const DESKTOP_LEAF_COUNT = 100;
+export const MOBILE_LEAF_COUNT = 40;
 export const LEAF_MIN_DURATION = 2.6;
 export const LEAF_MAX_DURATION = 4.8;
 
@@ -32,12 +32,12 @@ export const AMBIENT_SWAY_MIN_DURATION = 5;
 export const AMBIENT_SWAY_MAX_DURATION = 9;
 
 export const theme = {
-  colors: {
-    ivory: "#f8efd9",
-    teal: "#0b6e6e",
-    indigo: "#133b77",
-    magenta: "#b4297a",
-    gold: "#ce9f3e",
-    leaf: "#35603a",
-  },
+	colors: {
+		ivory: "#f8efd9",
+		teal: "#0b6e6e",
+		indigo: "#133b77",
+		magenta: "#b4297a",
+		gold: "#ce9f3e",
+		leaf: "#35603a",
+	},
 };
